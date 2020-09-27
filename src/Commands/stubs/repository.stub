@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Repositories;
+
+use App\Models\{{name}};
+use nolin\laratools\Repositories\Repository;
+
+class {{name}}Repository extends Repository
+{
+    protected $model;
+    
+    public function __construct({{name}} $model)
+    {
+        $this->model = $model;
+    }
+}

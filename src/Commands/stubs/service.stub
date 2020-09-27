@@ -1,0 +1,77 @@
+<?php
+
+namespace App\Services;
+
+use App\Repositories\{{name}}Repository;
+use nolin\laratools\Services\Service;
+use Illuminate\Http\Request;
+
+class {{name}}Service extends Service
+{
+    protected $repository;
+    protected $request;
+
+    public function __construct(
+        {{name}}Repository $repository,
+        Request $request
+    ) {
+        $this->repository = $repository;
+        $this->request = $request;
+    }
+
+    /**
+     * create
+     *
+     * @param  Integer $adminId
+     * @return void
+     */
+    public function create($adminId)
+    {
+        return;
+    }
+
+    /**
+     * show
+     *
+     * @return Array
+     */
+    public function show()
+    {
+
+    }
+
+    /**
+     * read
+     *
+     * @param  Integer $id
+     * @return Array
+     */
+    public function read($id)
+    {
+
+    }
+
+    /**
+     * update
+     *
+     * @param  Integer $id
+     * @param  Integer $adminId
+     * @return void
+     */
+    public function update($id, $adminId)
+    {
+        return;
+    }
+
+    /**
+     * delete
+     *
+     * @param  Integer $id
+     * @param  Integer $adminId
+     * @return void
+     */
+    public function delete($id, $adminId)
+    {
+        return;
+    }
+}

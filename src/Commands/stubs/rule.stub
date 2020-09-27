@@ -1,0 +1,77 @@
+<?php
+
+namespace App\Validations;
+
+use nolin\laratools\Validations\BaseRules;
+
+class {{name}} extends BaseRules
+{
+    /**
+     * create
+     *
+     * @param  Array $request
+     * @return Array
+     */
+    public static function create($request)
+    {
+        return [
+            'rule' => [
+
+            ],
+        ];
+    }
+
+    /**
+     * show
+     *
+     * @return Array
+     */
+    public static function show()
+    {
+        return [
+            'rule' => [
+
+            ],
+        ];
+    }
+
+    /**
+     * read
+     *
+     * @return Array
+     */
+    public static function read()
+    {
+        return [
+            'rule' => [
+
+            ],
+        ];
+    }
+
+    /**
+     * update
+     *
+     * @param  Array $request
+     * @return Array
+     */
+    public static function update($request)
+    {
+        return self::create($request);
+    }
+
+    /**
+     * delete
+     *
+     * @param  Array $request
+     * @return Array
+     */
+    public static function delete()
+    {
+        return [
+            'rule' => [
+
+            ],
+        ];
+    }
+}

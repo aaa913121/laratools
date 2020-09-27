@@ -1,0 +1,111 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Services\{{name}}Service;
+use nolin\laratools\Controllers\Controller;
+use nolin\laratools\Facades\Support;
+use DB;
+use Illuminate\Http\Request;
+use Tymon\JWTAuth\JWTAuth;
+
+class {{name}}Controller extends Controller
+{
+    protected $service;
+    protected $request;
+    protected $jwt;
+    protected $validation;
+
+    public function __construct(
+        {{name}}Service $service,
+        JWTAuth $jwt,
+        Request $request
+    ) {
+        $this->service = $service;
+        $this->request = $request;
+        $this->jwt = $jwt;
+        $this->validation = Support::validation('{{nameLowerCase}}');
+    }
+
+    /**
+     * create
+     *
+     * @return void
+     */
+    public function create()
+    {
+        DB::beginTransaction();
+        try {
+            $this->validateRequest();
+            $this->service->setParameter()
+                ->create($this->getAdminId());
+            DB::commit();
+            return $this->success();
+        } catch (\Exception $e) {
+            DB::rollBack();
+            throw $e;
+        }
+    }
+
+    /**
+     * show
+     *
+     * @return void
+     */
+    public function show()
+    {
+        $this->validateRequest();
+        return $this->success($this->listPack($this->service->setParameter()->show()));
+    }
+
+    /**
+     * read
+     *
+     * @param  Integer $id
+     * @return void
+     */
+    public function read($id)
+    {
+        return $this->success($this->service->read($id));
+    }
+
+    /**
+     * update
+     *
+     * @param  Integer $id
+     * @return void
+     */
+    public function update($id)
+    {
+        DB::beginTransaction();
+        try {
+            $this->validateRequest();
+            $this->service->setParameter()
+                ->update($id, $this->getAdminId());
+            DB::commit();
+            return $this->success();
+        } catch (\Exception $e) {
+            DB::rollback();
+            throw $e;
+        }
+    }
+
+    /**
+     * delete
+     *
+     * @param  Integer $id
+     * @return void
+     */
+    public function delete($id)
+    {
+        DB::beginTransaction();
+        try {
+            $this->service->delete($id, $this->getAdminId());
+            DB::commit();
+            return $this->success();
+        } catch (\Exception $e) {
+            DB::rollback();
+            throw $e;
+        }
+    }
+}

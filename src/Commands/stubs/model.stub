@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class {{name}} extends Model
+{
+    protected $table = '{{nameLowerCase}}';
+    
+    // 自定義時間戳名
+    const CREATED_AT = 'createdOn';
+    const UPDATED_AT = 'updatedOn';
+
+    protected $fillable = [
+
+    ];
+}
