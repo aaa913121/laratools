@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Commands;
+namespace Nolin\Laratools\Commands;
 
 use Artisan;
 use Illuminate\Console\Command;

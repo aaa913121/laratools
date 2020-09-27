@@ -1,9 +1,9 @@
 <?php
 
-namespace nolin\laratools;
+namespace Nolin\Laratools;
 
-use nolin\laratools\Services\CurlService;
-use nolin\laratools\Services\ValidationService;
+use Nolin\Laratools\Services\CurlService;
+use Nolin\Laratools\Services\ValidationService;
 
 class Laratools
 {

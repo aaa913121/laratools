@@ -1,8 +1,8 @@
 <?php
 
-namespace nolin\laratools\Controllers;
+namespace Nolin\Laratools\Controllers;
 
-use nolin\laratools\Facades\Support;
+use Nolin\Laratools\Facades\Laratools;
 use Illuminate\Http\Request;
 
 class ExtendsController extends Controller
@@ -13,7 +13,7 @@ class ExtendsController extends Controller
     public function __construct(Request $request)
     {
         $this->request = $request;
-        $this->validation = Support::validation('Test')
+        $this->validation = Laratools::validation('Test')
             ->setNamespace('nolin\laratools\Validations');
     }
 

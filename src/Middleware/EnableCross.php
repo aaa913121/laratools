@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Middleware;
+namespace Nolin\Laratools\Middleware;
 
 use Closure;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Validations;
+namespace Nolin\Laratools\Validations;
 
 abstract class BaseRules
 {

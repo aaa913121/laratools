@@ -1,10 +1,10 @@
 <?php
 
-namespace nolin\laratools\Support;
+namespace Nolin\Laratools\Support;
 
 use Illuminate\Support\Str;
 
-trait Enums
+trait Enum
 {
     /**
      * Enum property getter

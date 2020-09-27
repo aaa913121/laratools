@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Providers;
+namespace Nolin\Laratools\Providers;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Foundation\AliasLoader;

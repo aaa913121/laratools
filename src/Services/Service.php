@@ -1,11 +1,10 @@
 <?php
 
-namespace nolin\laratools\Services;
+namespace Nolin\Laratools\Services;
 
-use Illuminate\Support\Carbon;
-use nolin\laratools\Support\ApiResponse;
-use nolin\laratools\Support\ThrowException;
-use nolin\laratools\Support\UserAgent;
+use Nolin\Laratools\Support\ApiResponse;
+use Nolin\Laratools\Support\ThrowException;
+use Nolin\Laratools\Support\UserAgent;
 
 class Service
 {
@@ -67,7 +66,7 @@ class Service
     {
         $this->parameter = array_merge($this->parameter, [
             'page' => $this->parameter['page'] ?? $default[0],
-            'pageSize' => $this->parameter['pageSize'] ?? $default[1],
+            'count' => $this->parameter['count'] ?? $default[1],
         ]);
 
         return $this;

@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Services;
+namespace Nolin\Laratools\Services;
 
 use Illuminate\Support\Facades\Validator;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;

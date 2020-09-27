@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Repositories;
+namespace Nolin\Laratools\Repositories;
 
 class Repository
 {

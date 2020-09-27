@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Rules;
+namespace Nolin\Laratools\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 

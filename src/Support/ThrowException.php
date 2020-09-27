@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Support;
+namespace Nolin\Laratools\Support;
 
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;

@@ -1,9 +1,9 @@
 <?php
 
-namespace nolin\laratools;
+namespace Nolin\Laratools;
 
-use nolin\laratools\Support\ThrowException;
 use Illuminate\Support\ServiceProvider;
+use Nolin\Laratools\Support\ThrowException;
 
 class LaratoolsServiceProvider extends ServiceProvider
 {
@@ -73,7 +73,7 @@ class LaratoolsServiceProvider extends ServiceProvider
 
         // 發佈語系(使用php artisan vendor:publish，選擇support.lang)
         $this->publishes([
-            __DIR__.'/resources/lang' => resource_path('lang/'),
+            __DIR__ . '/resources/lang' => resource_path('lang/'),
         ], 'laratools.lang');
     }
 

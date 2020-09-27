@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Services;
+namespace Nolin\Laratools\Services;
 
 class CurlService extends Service
 {

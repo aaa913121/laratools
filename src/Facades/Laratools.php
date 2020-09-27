@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Facades;
+namespace Nolin\Laratools\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

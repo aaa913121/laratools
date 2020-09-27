@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Providers;
+namespace Nolin\Laratools\Providers;
 
 abstract class BaseCommandServiceProvider extends ServiceProvider
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Providers;
+namespace Nolin\Laratools\Providers;
 
 class CommandServiceProvider extends BaseCommandServiceProvider
 {
@@ -15,11 +15,11 @@ class CommandServiceProvider extends BaseCommandServiceProvider
      * @var array
      */
     protected $commands = [
-        \nolin\laratools\Commands\MakeControllerCommand::class,
-        \nolin\laratools\Commands\MakeServiceCommand::class,
-        \nolin\laratools\Commands\MakeRepoCommand::class,
-        \nolin\laratools\Commands\MakeFullProcessCommand::class,
-        \nolin\laratools\Commands\MakeRuleCommand::class,
-        \nolin\laratools\Commands\MakeModelCommand::class,
+        \Nolin\Laratools\Commands\MakeControllerCommand::class,
+        \Nolin\Laratools\Commands\MakeServiceCommand::class,
+        \Nolin\Laratools\Commands\MakeRepoCommand::class,
+        \Nolin\Laratools\Commands\MakeFullProcessCommand::class,
+        \Nolin\Laratools\Commands\MakeRuleCommand::class,
+        \Nolin\Laratools\Commands\MakeModelCommand::class,
     ];
 }

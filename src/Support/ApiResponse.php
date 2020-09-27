@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Support;
+namespace Nolin\Laratools\Support;
 
 use Illuminate\Http\Response;
 use Symfony\Component\HttpFoundation\Response as FoundationResponse;

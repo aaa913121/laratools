@@ -1,14 +1,14 @@
 <?php
 
-namespace nolin\laratools\Controllers;
+namespace Nolin\Laratools\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
-use nolin\laratools\Support\ApiResponse;
-use nolin\laratools\Support\ParseManager;
-use nolin\laratools\Support\UserAgent;
+use Nolin\Laratools\Support\ApiResponse;
+use Nolin\Laratools\Support\ParseManager;
+use Nolin\Laratools\Support\UserAgent;
 
 class Controller extends BaseController
 {

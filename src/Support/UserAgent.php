@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Support;
+namespace Nolin\Laratools\Support;
 
 trait UserAgent
 {

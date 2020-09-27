@@ -1,6 +1,6 @@
 <?php
 
-namespace nolin\laratools\Exceptions;
+namespace Nolin\Laratools\Exceptions;
 
 use Exception;
 
