@@ -24,7 +24,7 @@ class {{name}}Controller extends Controller
         $this->service = $service;
         $this->request = $request;
         $this->jwt = $jwt;
-        $this->validation = Laratools::validation('{{nameLowerCase}}');
+        $this->validation = Support::validation('{{nameLowerCase}}');
     }
 
     /**
