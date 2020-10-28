@@ -2,7 +2,7 @@
 
 namespace App\Validations;
 
-use nolin\laratools\Validations\BaseRules;
+use Nolin\Laratools\Validations\BaseRules;
 
 class {{name}} extends BaseRules
 {

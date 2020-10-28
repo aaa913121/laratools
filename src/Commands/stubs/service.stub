@@ -3,7 +3,7 @@
 namespace App\Services;
 
 use App\Repositories\{{name}}Repository;
-use nolin\laratools\Services\Service;
+use Nolin\Laratools\Services\Service;
 use Illuminate\Http\Request;
 
 class {{name}}Service extends Service

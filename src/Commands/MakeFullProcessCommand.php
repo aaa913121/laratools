@@ -46,11 +46,11 @@ class MakeFullProcessCommand extends Command
             $repositoryName = ucfirst($className) . 'Repository';
 
             if ($this->confirm('Are you sure to create ' . $controllerName . "、" . $servicesName . "、" . $repositoryName . " and rule file、model、migration " . ucfirst($className))) {
-                Artisan::call('support:make:controller', ['name' => ucfirst($className)]);
-                Artisan::call('support:make:service', ['name' => ucfirst($className)]);
-                Artisan::call('support:make:repository', ['name' => ucfirst($className)]);
-                Artisan::call('support:make:rule', ['name' => ucfirst($className)]);
-                Artisan::call('support:make:model', ['name' => ucfirst($className)]);
+                Artisan::call('laratools:make:controller', ['name' => ucfirst($className)]);
+                Artisan::call('laratools:make:service', ['name' => ucfirst($className)]);
+                Artisan::call('laratools:make:repository', ['name' => ucfirst($className)]);
+                Artisan::call('laratools:make:rule', ['name' => ucfirst($className)]);
+                Artisan::call('laratools:make:model', ['name' => ucfirst($className)]);
                 Artisan::call('make:migration', ['name' => 'create' . ucfirst($className) . 'Table']);
             } else {
                 $this->error('Bye');

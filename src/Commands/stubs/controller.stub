@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Services\{{name}}Service;
-use nolin\laratools\Controllers\Controller;
-use nolin\laratools\Facades\Support;
+use Nolin\Laratools\Controllers\Controller;
+use Nolin\Laratools\Facades\Support;
 use DB;
 use Illuminate\Http\Request;
 use Tymon\JWTAuth\JWTAuth;
@@ -24,7 +24,7 @@ class {{name}}Controller extends Controller
         $this->service = $service;
         $this->request = $request;
         $this->jwt = $jwt;
-        $this->validation = Support::validation('{{nameLowerCase}}');
+        $this->validation = Laratools::validation('{{nameLowerCase}}');
     }
 
     /**
